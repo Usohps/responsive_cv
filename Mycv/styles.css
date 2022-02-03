@@ -1,0 +1,192 @@
+/* index.html syles */
+a{
+    text-decoration: none;
+    color: green;
+}
+body{
+    background-color:rgb(122, 68, 122);
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Merienda', cursive;
+}
+
+.my_picture{
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+header{
+    width: 100%;
+    text-align: center;
+}
+.Title{
+    max-width:400px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+}
+.summary_note{
+    max-width:500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+}
+.summary_note p{
+    font-size: 20px;
+    padding: 1em;
+}
+.page_btn{
+    max-width:800px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.btn{
+    width:150px;
+    margin: 20px;
+    padding:10px;
+    text-shadow: blue;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: cornsilk;
+    border: none;
+}
+.img_svg{
+    max-width:30%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.img_svg img{
+    width:35px;
+    height: 35px;
+    margin: auto;
+    cursor: pointer;
+    fill: white;
+}
+.logo :hover{
+    background-color: aqua;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: blue;
+    color: white;
+    padding-top: 5px;
+}
+
+/* project.html styles */
+
+.project_body{
+    background-color:orangered;
+}
+.heading{
+    max-width: 500px;
+    margin: auto;
+    color: black;
+    font-weight: 800;
+    padding:1em;
+}
+.container{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.project_image{
+    width:500px;
+    border-radius: 10px;
+}
+.description{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.brief_msg{
+    max-width: 350px;
+    text-align: center;
+}
+
+/* contact.html styles */
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+.contact_main{
+    max-width: 400px;
+    height: 450px;
+    margin: auto;
+    padding:10px;
+}
+.label{
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left:15px
+}
+input{
+    width:100%;
+    padding:15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.submit_btn{
+    width:100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#submit{
+    width:150px;
+    margin: 20px;
+    padding:10px;
+    text-shadow: blue;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: cornsilk;
+    border: none;
+}
+footer p{
+    text-align: center;
+    padding:1em;
+}
+/* ======MEDIA QUERY for index.html */
+@media screen and (max-width: 600px){
+   .page_btn{
+       max-width: 300px;
+   }
+   .container{
+       flex-direction: column-reverse;
+   }
+   .project_image{
+       width: 400px;
+       display: block;
+       margin-bottom: 15px;
+   }
+   #first_brief{
+       display: none;
+   }
+}
+@media screen and (max-width: 440px){
+    .project_image{
+        width: 300px;
+    }
+    .img_svg{
+        width:100%;
+    }
+    .img_svg img{
+        margin-right: 35px;
+    }
+}
